@@ -14,6 +14,8 @@ namespace Platformer.Mechanics
     /// </summary>
     public class PlayerController : KinematicObject
     {
+        public bool jumpUnlocked = true;
+
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
@@ -56,9 +58,9 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
-                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump") && jumpUnlocked)
                     jumpState = JumpState.PrepareToJump;
-                else if (Input.GetButtonUp("Jump"))
+                else if (Input.GetButtonUp("Jump") && jumpUnlocked)
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
