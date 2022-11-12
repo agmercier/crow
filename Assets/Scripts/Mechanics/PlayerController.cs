@@ -14,7 +14,8 @@ namespace Platformer.Mechanics
     /// </summary>
     public class PlayerController : KinematicObject
     {
-        public bool jumpUnlocked = true;
+        //List of unlockable mechanics here:
+        public bool jumpUnlocked = false;
 
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
@@ -58,6 +59,8 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
+
+                //jump mechanic only works if jump unlocked (jumpUnlocked == true)
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump") && jumpUnlocked)
                     jumpState = JumpState.PrepareToJump;
                 else if (Input.GetButtonUp("Jump") && jumpUnlocked)
