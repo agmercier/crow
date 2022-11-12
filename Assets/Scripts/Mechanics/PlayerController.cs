@@ -16,6 +16,7 @@ namespace Platformer.Mechanics
     {
         //List of unlockable mechanics here:
         public bool jumpUnlocked = false;
+        public bool moveUnlocked = true;
 
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
@@ -58,8 +59,12 @@ namespace Platformer.Mechanics
         {
             if (controlEnabled)
             {
-                move.x = Input.GetAxis("Horizontal");
-
+                //can only move if movement is unlocked(moveUnlocked == true)
+                if (moveUnlocked)
+                {
+                    move.x = Input.GetAxis("Horizontal");
+                }
+                
                 //jump mechanic only works if jump unlocked (jumpUnlocked == true)
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump") && jumpUnlocked)
                     jumpState = JumpState.PrepareToJump;
