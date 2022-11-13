@@ -42,6 +42,10 @@ public class MoveUnlock : MonoBehaviour
             //stops object collection from occuring more than once
             if (collected) return;
             collected = true;
+
+            //play the collection sound
+            AudioSource.PlayClipAtPoint(collectAudio, this.transform.position);
+
             //removes orb once collected
             Destroy(this.gameObject);
 
