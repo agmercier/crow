@@ -4077,7 +4077,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectAudio
       value: 
-      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+      objectReference: {fileID: 8300000, guid: c40243316b92f1a40be95cfa3f9318ad, type: 3}
     - target: {fileID: 4173486173919222393, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
       propertyPath: m_Name
@@ -4380,6 +4380,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2629046235299770708, guid: 8b4f94557636c284f8149209455c0e1d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 838423049}
+    - target: {fileID: 2629046235299770708, guid: 8b4f94557636c284f8149209455c0e1d,
+        type: 3}
+      propertyPath: collectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5eddaa3484ae61649900626fbfd5da3e, type: 3}
     - target: {fileID: 4173486173919222393, guid: 8b4f94557636c284f8149209455c0e1d,
         type: 3}
       propertyPath: m_Name
