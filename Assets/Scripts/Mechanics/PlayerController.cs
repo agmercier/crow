@@ -62,7 +62,7 @@ namespace Platformer.Mechanics
                 //can only move if movement is unlocked(moveUnlocked == true)
                 if (moveUnlocked)
                 {
-                    move.x = Input.GetAxis("Horizontal");
+                    move.x = Input.GetAxisRaw("Horizontal");
                 }
                 
                 //jump mechanic only works if jump unlocked (jumpUnlocked == true)
