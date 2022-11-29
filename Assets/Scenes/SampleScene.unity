@@ -13030,6 +13030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
+      propertyPath: jumpAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: ca1fc22547384e140be1f13e70f5cabd, type: 3}
+    - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
       propertyPath: jumpState
       value: 4
       objectReference: {fileID: 0}
@@ -13321,7 +13326,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectAudio
       value: 
-      objectReference: {fileID: 8300000, guid: c40243316b92f1a40be95cfa3f9318ad, type: 3}
+      objectReference: {fileID: 8300000, guid: ca1fc22547384e140be1f13e70f5cabd, type: 3}
     - target: {fileID: 4173486173919222393, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
       propertyPath: m_Name
@@ -13937,7 +13942,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0933852, y: 1}
+    m_SensorSize: {x: 2.2569091, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
