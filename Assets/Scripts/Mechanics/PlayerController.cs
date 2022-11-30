@@ -57,7 +57,7 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-            if (controlEnabled)
+            if (controlEnabled && !DialogueManager.GetInstance().dialogueIsPlaying)
             {
                 //can only move if movement is unlocked(moveUnlocked == true)
                 if (moveUnlocked)
