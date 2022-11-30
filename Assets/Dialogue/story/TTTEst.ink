@@ -2,14 +2,14 @@
 -> main
 
 === main ===
-Which pokemon do you choose?
-    + [Charmander]
-        -> chosen("Charmander")
-    + [Bulbasaur]
-        -> chosen("Bulbasaur")
-    + [Squirtle]
-        -> chosen("Squirtle")
+Hey little crow, what is your favorite bird?
+    + [I like crows]
+        -> chosen("crows")
+    + [I like parrots]
+        -> chosen("parrots")
+    + [I like kiwis]
+        -> chosen("kiwis")
         
-=== chosen(pokemon) ===
-You chose {pokemon}!
+=== chosen(chosenBird) ===
+You chose {chosenBird}! That is also my favorite.
 -> END
