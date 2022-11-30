@@ -35,7 +35,7 @@ public class KiwiUnlock : MonoBehaviour
             collected = true;
 
             //play the collection sound
-            AudioSource.PlayClipAtPoint(collectAudio, this.transform.position);
+            AudioSource.PlayClipAtPoint(collectAudio, this.transform.position,20f);
 
             //removes orb once collected
             Destroy(this.gameObject);
