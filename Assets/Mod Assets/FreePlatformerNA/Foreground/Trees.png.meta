@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -981,14 +993,12 @@ TextureImporter:
       Trees_21: 1260984627
       Trees_35: 1109176722
       Trees_30: 1661073971
-      Trees_39: -291696148
       Trees_23: 1129379298
       Trees_1: 1290252125
       Trees_6: 1675573354
       Trees_4: 2113316289
       Trees_15: -150085427
       Trees_33: 1886494048
-      Trees_25: 1865858578
       Trees_13: -1928373075
       Trees_8: -822381584
       Trees_0: 699374038
@@ -1015,8 +1025,8 @@ TextureImporter:
       Trees_24: 875518350
       Trees_26: -864778454
       Trees_36: -918195716
-      Trees_14: 1888586581
       Trees_38: 1856001500
+      Trees_39: -291696148
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
