@@ -115,7 +115,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 280
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d65e69f3aaec1f408fcaa6ee3b5f4c4
+      internalID: -1889755952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 280
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24a778e5fd307741acb153c65ab1d35
+      internalID: -1336358574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 280
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1718e4deacbd6f24a8335dbb3b0e8ec1
+      internalID: 470965694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 152
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39072a1e6d2c945a6f5055b7f8a5be
+      internalID: -1462274994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 152
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea3112c20d873d4387117854d95ef64
+      internalID: -152657508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_5
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 152
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143a5256490cc9f41850966d141b972c
+      internalID: -1676465675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 24
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090dd4ba9aedff8419703284c3324a5d
+      internalID: 863144984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimatedMushroomBlue_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 24
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471f051ee0841f4418f3d7df806702a1
+      internalID: -689437553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +294,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AnimatedMushroomBlue_3: -1462274994
+      AnimatedMushroomBlue_0: -1889755952
+      AnimatedMushroomBlue_1: -1336358574
+      AnimatedMushroomBlue_6: 863144984
+      AnimatedMushroomBlue_7: -689437553
+      AnimatedMushroomBlue_4: -152657508
+      AnimatedMushroomBlue_5: -1676465675
+      AnimatedMushroomBlue_2: 470965694
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
