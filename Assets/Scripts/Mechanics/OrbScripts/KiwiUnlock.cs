@@ -18,12 +18,15 @@ public class KiwiUnlock : MonoBehaviour
     public AudioClip collectAudio;
     //the player object in the scene
     public GameObject kiwi;
+    public GameObject kiwiTrigger;
+    public GameObject kiwiVisualCue;
     internal bool collected = false;
+
+    public Sprite newSprite;
 
     void Start()
     {
-        
-    }
+     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,12 +43,12 @@ public class KiwiUnlock : MonoBehaviour
             //removes orb once collected
             Destroy(this.gameObject);
 
-            //activates kiwi
-            if (!kiwi.activeInHierarchy)
-            {
-                kiwi.SetActive(true);
+            //changes from mute to speakable icon
+            kiwiVisualCue.GetComponent<SpriteRenderer>().sprite = newSprite;
+
+            //makes speakable
+            kiwiTrigger.GetComponent<DialogueTrigger>().hasSound = true;
             }
-        }
     }
 }
 }

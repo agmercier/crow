@@ -12,12 +12,15 @@ namespace Platformer.Mechanics
         [Header("Ink JSON")]
         [SerializeField] private TextAsset inkJSON;
 
+        public bool hasSound;
+
         private bool playerInRange;
 
         private void Awake()
         {
             playerInRange = false;
             visualCue.SetActive(false);
+            hasSound = false;
         }
 
         private void Update()
@@ -25,7 +28,7 @@ namespace Platformer.Mechanics
             if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
             {
                 visualCue.SetActive(true);
-                if (Input.GetButtonDown("Interact"))
+                if (Input.GetButtonDown("Interact") && hasSound)
                 {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                 }
