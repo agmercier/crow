@@ -2,14 +2,12 @@
 -> main
 
 === main ===
-Hey little crow, what is your favorite bird? (Press space to choose)
-    + [I like crows]
-        -> chosen("crows")
-    + [I like parrots]
-        -> chosen("parrots")
-    + [I like kiwis]
-        -> chosen("kiwis")
+Thank you, little crow. You got me my voice back! (Press space to choose)
+    + [You're welcome!]
+        -> chosen("cool")
+    + [Get out of my way.]
+        -> chosen("rude")
         
 === chosen(chosenBird) ===
-You chose {chosenBird}! That is also my favorite.
+You're very {chosenBird}... 
 -> END
