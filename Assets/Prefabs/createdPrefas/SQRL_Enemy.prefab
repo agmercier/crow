@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8891820538089538120}
   m_Layer: 13
   m_Name: SQRL_Enemy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
