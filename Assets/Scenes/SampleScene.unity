@@ -5804,11 +5804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1824045667, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.45
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 1824045667, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.48
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 1208144871472054, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_Name
@@ -47113,7 +47113,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inkJSON_jump
       value: 
-      objectReference: {fileID: 4900000, guid: 5b1cea8a8a3cd76459218dc9bf1eeee0, type: 3}
+      objectReference: {fileID: 4900000, guid: 7f60bf9e2dc0c9f469a2c1444089f1c9, type: 3}
     - target: {fileID: 4173486173919222393, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
       propertyPath: m_Name
