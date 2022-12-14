@@ -70,18 +70,15 @@ namespace Platformer.Mechanics
 
         public void EnterDialogueMode(TextAsset inkJSON)
         {
-            Debug.Log("Enter");
             currentStory = new Story(inkJSON.text);
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
-            Time.timeScale = 0;
-
+        
             ContinueStory();
         }
 
         private IEnumerator ExitDialogueMode()
         {
-            Debug.Log("whatever");
             yield return new WaitForSeconds(0.2f);
 
             dialogueIsPlaying = false;
@@ -100,9 +97,7 @@ namespace Platformer.Mechanics
             }
             else
             {
-                Debug.Log("continue");
                 StartCoroutine(ExitDialogueMode());
-                Time.timeScale = 1;
             }
         }
 
