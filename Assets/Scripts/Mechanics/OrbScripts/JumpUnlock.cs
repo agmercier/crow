@@ -14,44 +14,52 @@ using UnityEngine;
  *    
  * If it doesn't work ask: Arthur
  */
-
-
 //Have to be in correct namespace to be able to call 'PlayerController', otherwise it wont be able to find it. Took me 2 hours to realise the problem
 namespace Platformer.Mechanics
 {
-
-
-public class JumpUnlock : MonoBehaviour
-{
-    //audio sound to be played when orb collected
-    public AudioClip collectAudio;
-    //the player object in the scene
-    public GameObject player;
-    internal bool collected = false;
-
-    void Start()
+    public class JumpUnlock : MonoBehaviour
     {
-        
-    }
+        //audio sound to be played when orb collected
+        public AudioClip collectAudio;
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        //if player object exists (prevents nullpointer errors)
-        if (player != null)
+        //the player object in the scene
+        public GameObject player;
+
+        internal bool collected = false;
+
+        [Header("Ink JSON")]
+        [SerializeField]
+        private TextAsset inkJSON_jump;
+
+        void Start()
         {
-            //stops object collection from occuring more than once
-            if (collected) return;
-            collected = true;
+        }
 
-            //play the collection sound
-            AudioSource.PlayClipAtPoint(collectAudio, this.transform.position);
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            //if player object exists (prevents nullpointer errors)
+            if (player != null)
+            {
+                //stops object collection from occuring more than once
+                if (collected) return;
+                collected = true;
 
-            //removes orb once collected
-            Destroy(this.gameObject);
+                //play the collection sound
+                AudioSource
+                    .PlayClipAtPoint(collectAudio, this.transform.position);
 
-            //fetches Player Controller component from the player and sets 'jumpUnlock' to true
-            player.GetComponent<PlayerController>().jumpUnlocked = true;
+                //plays message
+                if (collected == true && !DialogueManager.GetInstance().dialogueIsPlaying)
+                {
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON_jump);
+                }
+
+                //removes orb once collected
+                Destroy(this.gameObject);
+
+                //fetches Player Controller component from the player and sets 'jumpUnlock' to true
+                player.GetComponent<PlayerController>().jumpUnlocked = true;
+            }
         }
     }
-}
 }

@@ -9,20 +9,20 @@ namespace Platformer.Mechanics
 
 public class Jump_UI_appear : MonoBehaviour
 {
-    //[Header("Image")]
+    [Header("Image")]
     [SerializeField] private Image jumpImage;
     public GameObject player;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && player.GetComponent<PlayerController>().jumpUnlocked == true)
+        if (other.CompareTag("Player") == true && player.GetComponent<PlayerController>().jumpUnlocked == true)
         {
             jumpImage.enabled = true;
         }
     }
      void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") == true)
         {
             jumpImage.enabled = false;
         }
