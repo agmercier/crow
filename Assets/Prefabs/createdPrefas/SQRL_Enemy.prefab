@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8891820538089538120}
   m_Layer: 13
   m_Name: SQRL_Enemy
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  maxSpeed: 7
+  maxSpeed: 2
   jumpTakeOffSpeed: 7
   move: {x: 0, y: 0}
   jump: 0
