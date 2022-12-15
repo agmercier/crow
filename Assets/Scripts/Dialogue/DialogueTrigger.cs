@@ -18,7 +18,11 @@ namespace Platformer.Mechanics
 
         private bool playerInRange;
 
+        [Header("Animator")]
         public Animator animator;
+
+        [Header("Sound clip")]
+        public AudioClip kiwisound;
 
         private void Awake()
         {
@@ -39,6 +43,7 @@ namespace Platformer.Mechanics
                 {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                     animator.SetBool("isTalking",!DialogueManager.GetInstance().dialogueIsPlaying);
+                    AudioSource.PlayClipAtPoint(kiwisound, this.transform.position,20f);
                 }
             }
             else
