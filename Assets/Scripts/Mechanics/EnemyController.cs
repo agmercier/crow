@@ -50,19 +50,13 @@ namespace Platformer.Mechanics
 
         void Update()
         {
+
             if (path != null)
             {
-                if(!DialogueManager.GetInstance().dialogueIsPlaying)
-                {
-                    if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
-                    control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
-                }
-
-                else
-                {
-                    control.move.x = 0;
-                }
+                if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
+                control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
             }
+        
         }
     }
 }
