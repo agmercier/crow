@@ -7,14 +7,18 @@ namespace Platformer.Mechanics
     public class DialogueTrigger : MonoBehaviour
     {
         [Header("Visual Cue")]
-        [SerializeField] private GameObject visualCue;
+        [SerializeField]
+        private GameObject visualCue;
 
         [Header("Ink JSON")]
-        [SerializeField] private TextAsset inkJSON;
+        [SerializeField]
+        private TextAsset inkJSON;
 
         public bool hasSound;
 
         private bool playerInRange;
+
+        public Animator animator;
 
         private void Awake()
         {
@@ -25,17 +29,22 @@ namespace Platformer.Mechanics
 
         private void Update()
         {
-            if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+            if (
+                playerInRange &&
+                !DialogueManager.GetInstance().dialogueIsPlaying
+            )
             {
                 visualCue.SetActive(true);
                 if (Input.GetButtonDown("Interact") && hasSound)
                 {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                    animator.SetBool("isTalking",!DialogueManager.GetInstance().dialogueIsPlaying);
                 }
             }
             else
             {
                 visualCue.SetActive(false);
+                animator.SetBool("isTalking",DialogueManager.GetInstance().dialogueIsPlaying);
             }
         }
 

@@ -22,6 +22,10 @@ public class KiwiUnlock : MonoBehaviour
     public GameObject kiwiVisualCue;
     internal bool collected = false;
 
+    public GameObject later_kiwi;
+    public GameObject later_kiwiTrigger;
+    public GameObject mushroom;
+
     public Sprite newSprite;
 
     void Start()
@@ -48,6 +52,14 @@ public class KiwiUnlock : MonoBehaviour
 
             //makes speakable
             kiwiTrigger.GetComponent<DialogueTrigger>().hasSound = true;
+
+            if(later_kiwi != null)
+            {
+                later_kiwi.SetActive(true);
+                later_kiwiTrigger.GetComponent<DialogueTrigger>().hasSound = true;
+                mushroom.SetActive(true);
+            }
+
             }
     }
 }

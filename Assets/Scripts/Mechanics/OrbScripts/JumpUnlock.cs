@@ -54,11 +54,6 @@ namespace Platformer.Mechanics
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON_jump);
                 }
 
-                // if (DialogueManager.GetInstance().dialogueIsPlaying)
-                // {
-                    
-                // }
-
                 //removes orb once collected
                 Destroy(this.gameObject);
 

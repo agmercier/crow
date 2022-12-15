@@ -73,7 +73,7 @@ namespace Platformer.Mechanics
             currentStory = new Story(inkJSON.text);
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
-
+        
             ContinueStory();
         }
 
