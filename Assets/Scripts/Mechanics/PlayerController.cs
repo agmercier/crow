@@ -17,6 +17,7 @@ namespace Platformer.Mechanics
         //List of unlockable mechanics here:
         public bool jumpUnlocked = false;
         public bool moveUnlocked = true;
+        public bool waterUnlocked = false;
 
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
@@ -73,6 +74,8 @@ namespace Platformer.Mechanics
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
                 }
+
+
             }
             else
             {

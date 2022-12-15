@@ -58,7 +58,7 @@ namespace Platformer.Mechanics
                 Destroy(this.gameObject);
 
                 //fetches Player Controller component from the player and sets 'jumpUnlock' to true
-                player.GetComponent<PlayerController>().jumpUnlocked = true;
+                player.GetComponent<PlayerController>().waterUnlocked = true;
             }
         }
     }
