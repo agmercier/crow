@@ -67,6 +67,11 @@ namespace Platformer.Mechanics
             else if (move.x < -0.01f)
                 spriteRenderer.flipX = true;
 
+            // if(DialogueManager.GetInstance().dialogueIsPlaying)
+            // {
+            //     velocity.x = 0;
+            // }
+
             animator.SetBool("grounded", IsGrounded);
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
