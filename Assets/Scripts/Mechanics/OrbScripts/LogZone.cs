@@ -11,7 +11,6 @@ namespace Platformer.Mechanics
         public GameObject logs;
         public AudioClip collectAudio;
         public Transform target;
-        public GameObject c;
         public float speed;
 
         private bool inZone;
