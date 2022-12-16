@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a405b4814aba234294830445c918a83
+guid: d8f260a5bebb57246a27fe588ae0b640
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,43 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EkeyAnimations_0
+      name: mushroom_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 32
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99c3315df09000b4b9ba788894e4ed2d
-      internalID: -1113640628
+      spriteID: 8207df5cd2d5dd04ea55b30dcf0a5532
+      internalID: -809032961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EkeyAnimations_1
+      name: mushroom_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9d2acdbe26bccd44a113b1100d23d0d
-      internalID: -400255416
+      spriteID: d3affe474b9e9954c88119cf3dbf3066
+      internalID: -1097478446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4b4b794d857b147a8a436a9bd42239
+      internalID: -717500224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f989d3f219caa4f8b10cbbf2fa6cb4
+      internalID: 1001644883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922e0159dda20b94e821b0d803e74aeb
+      internalID: -385523490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ef045575564ef4f8f65c2c5aabd724
+      internalID: -1192442407
       vertices: []
       indices: 
       edges: []
@@ -169,8 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EkeyAnimations_0: -1113640628
-      EkeyAnimations_1: -400255416
+      mushroom_3: 1001644883
+      mushroom_0: -809032961
+      mushroom_5: -1192442407
+      mushroom_4: -385523490
+      mushroom_1: -1097478446
+      mushroom_2: -717500224
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
