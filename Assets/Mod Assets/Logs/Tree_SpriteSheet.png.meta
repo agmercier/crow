@@ -3532,8 +3532,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3557,8 +3557,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: 8}
-        - {x: 8, y: 8}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3953,8 +3953,8 @@ TextureImporter:
       Tree_SpriteSheet_153: -2115874396
       Tree_SpriteSheet_15: 1798795868
       Tree_SpriteSheet_55: 1641799518
-      Tree_SpriteSheet_90: -1935138183
       Tree_SpriteSheet_18: 71844758
+      Tree_SpriteSheet_90: -1935138183
       Tree_SpriteSheet_1: -112722181
       Tree_SpriteSheet_7: -574328360
       Tree_SpriteSheet_104: -2095465491
