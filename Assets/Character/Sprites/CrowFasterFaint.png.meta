@@ -112,8 +112,8 @@ TextureImporter:
         y: 96
         width: 44
         height: 41
-      alignment: 9
-      pivot: {x: 0.527972, y: 0.43996188}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,11 +130,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 95
+        y: 96
         width: 42
-        height: 42
-      alignment: 9
-      pivot: {x: 0.5879115, y: 0.4740904}
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,8 +154,8 @@ TextureImporter:
         y: 96
         width: 40
         height: 42
-      alignment: 9
-      pivot: {x: 0.5769224, y: 0.45604324}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,8 +175,8 @@ TextureImporter:
         y: 48
         width: 38
         height: 43
-      alignment: 9
-      pivot: {x: 0.6538461, y: 0.45706567}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,8 +196,8 @@ TextureImporter:
         y: 48
         width: 42
         height: 44
-      alignment: 9
-      pivot: {x: 0.5366298, y: 0.4440552}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,8 +217,8 @@ TextureImporter:
         y: 48
         width: 48
         height: 41
-      alignment: 9
-      pivot: {x: 0.49358955, y: 0.43245733}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,8 +238,8 @@ TextureImporter:
         y: 0
         width: 48
         height: 36
-      alignment: 9
-      pivot: {x: 0.48076916, y: 0.4230762}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,9 +258,9 @@ TextureImporter:
         x: 48
         y: 0
         width: 48
-        height: 36
-      alignment: 9
-      pivot: {x: 0.4679486, y: 0.10113727}
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,39 +277,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 48
-        width: 48
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80545110462fea44abd1948654247f8b
-      internalID: 406892715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowFasterFaint_9
-      rect:
-        serializedVersion: 2
-        x: 96
         y: 0
         width: 48
-        height: 36
-      alignment: 9
-      pivot: {x: 0.48717928, y: 0.21906245}
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422f7d11dc8629e45a40487d3d73ceea
-      internalID: 1641197619
+      spriteID: 081ebf94277e1924fb31dd6a5f364c9d
+      internalID: 406892715
       vertices: []
       indices: 
       edges: []
@@ -332,7 +311,6 @@ TextureImporter:
       CrowFasterFaint_3: -1561776858
       CrowFasterFaint_6: -1385688327
       CrowFasterFaint_0: -1727962525
-      CrowFasterFaint_9: 1641197619
       CrowFasterFaint_8: 406892715
       CrowFasterFaint_2: -1972520633
   spritePackingTag: 
