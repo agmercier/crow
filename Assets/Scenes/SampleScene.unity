@@ -7262,7 +7262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &822185684
 Transform:
   m_ObjectHideFlags: 0
@@ -60657,7 +60657,7 @@ MonoBehaviour:
   tilemapLogs: {fileID: 528589647}
   player: {fileID: 838423049}
   logs: {fileID: 225241224}
-  collectAudio: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+  collectAudio: {fileID: 8300000, guid: 9de717c7252d2e54890c77125a918c58, type: 3}
   target: {fileID: 2134617850}
   c: {fileID: 0}
   speed: 1
