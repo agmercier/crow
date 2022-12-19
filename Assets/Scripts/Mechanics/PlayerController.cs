@@ -20,6 +20,8 @@ namespace Platformer.Mechanics
         public bool waterUnlocked = false;
         public bool glideUnlocked = false;
 
+        public float floatingReset = 0f;
+
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
@@ -87,7 +89,9 @@ namespace Platformer.Mechanics
 
                 if (Input.GetButtonDown("Jump") && glideUnlocked)
                 {
+                    this.GetComponent<PlayerController>().velocity.y = floatingReset;
                     this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
+
                 }
                 else if (Input.GetButtonUp("Jump") && glideUnlocked)
                 {
