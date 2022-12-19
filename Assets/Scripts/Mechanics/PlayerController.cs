@@ -18,6 +18,7 @@ namespace Platformer.Mechanics
         public bool jumpUnlocked = false;
         public bool moveUnlocked = true;
         public bool waterUnlocked = false;
+        public bool glideUnlocked = false;
 
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
@@ -84,11 +85,11 @@ namespace Platformer.Mechanics
                 }
 
 
-                if (Input.GetButtonDown("Jump"))
+                if (Input.GetButtonDown("Jump") && glideUnlocked)
                 {
                     this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
                 }
-                else if (Input.GetButtonUp("Jump"))
+                else if (Input.GetButtonUp("Jump") && glideUnlocked)
                 {
                     this.GetComponent<PlayerController>().gravityModifier = permaGravity;
                 }
