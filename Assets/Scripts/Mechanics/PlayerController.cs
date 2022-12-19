@@ -23,6 +23,9 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
+        private float permaGravity;
+        public float floatingGravityModifier = 0.1f;
+
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
@@ -54,6 +57,7 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            permaGravity = this.gravityModifier;
         }
 
         protected override void Update()
@@ -68,13 +72,26 @@ namespace Platformer.Mechanics
                 
                 //jump mechanic only works if jump unlocked (jumpUnlocked == true)
                 if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump") && jumpUnlocked)
+                {
                     jumpState = JumpState.PrepareToJump;
+                    //this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
+                }
                 else if (Input.GetButtonUp("Jump") && jumpUnlocked)
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
+                    //this.GetComponent<PlayerController>().gravityModifier = permaGravity;
                 }
 
+
+                if (Input.GetButtonDown("Jump"))
+                {
+                    this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
+                }
+                else if (Input.GetButtonUp("Jump"))
+                {
+                    this.GetComponent<PlayerController>().gravityModifier = permaGravity;
+                }
 
             }
             else
