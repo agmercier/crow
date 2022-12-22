@@ -8,6 +8,8 @@ namespace Platformer.Mechanics
     {
         public float verticalVelocity;
 
+        public GameObject parent;
+
         public AudioClip bounce;
 
         void OnTriggerStay2D(Collider2D other)
@@ -23,6 +25,8 @@ namespace Platformer.Mechanics
         void AddVelocity(PlayerController player)
         {
             player.velocity.y = verticalVelocity;
+            //player.velocity.x = /*parent.transform.forward **/ verticalVelocity;
+            //player.Bounce(parent.transform.forward * verticalVelocity);
         }
     }
 }
