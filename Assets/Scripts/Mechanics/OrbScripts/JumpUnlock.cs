@@ -45,8 +45,7 @@ namespace Platformer.Mechanics
                 collected = true;
 
                 //play the collection sound
-                AudioSource
-                    .PlayClipAtPoint(collectAudio, this.transform.position);
+                AudioSource.PlayClipAtPoint(collectAudio, this.transform.position);
 
                 //plays message
                 if (collected == true && !DialogueManager.GetInstance().dialogueIsPlaying)
