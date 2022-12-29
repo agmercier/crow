@@ -1298,6 +1298,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrbGlide
       objectReference: {fileID: 0}
+    - target: {fileID: 4173486173919222393, guid: b461573d571fbcc49930a86529d2689c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5993059845083962610, guid: b461573d571fbcc49930a86529d2689c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2140,6 +2145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OrbAir
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173486173919222393, guid: 1f6f766991f4a1444be8a0b404aaf3f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5993059845083962610, guid: 1f6f766991f4a1444be8a0b404aaf3f0,
         type: 3}
@@ -8398,7 +8408,7 @@ PrefabInstance:
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: jumpUnlocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
@@ -68671,7 +68681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &969024960
 Transform:
   m_ObjectHideFlags: 0
@@ -73913,7 +73923,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9951923, y: 1}
+    m_SensorSize: {x: 2.2730885, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -75124,6 +75134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: air
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792710470415938890, guid: 1ffb8423d4bf47b44839be92d62f9380,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ffb8423d4bf47b44839be92d62f9380, type: 3}
