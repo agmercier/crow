@@ -141,8 +141,15 @@ namespace Platformer.Mechanics
         public void MakeChoice(int choiceIndex)
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
+            WaitaBit();
+            /*yield return new WaitForSeconds(0.2f);*/
             // NOTE: The below two lines were added to fix a bug after the Youtube video was made
             //InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script
+            /*ContinueStory();*/
+        }
+        private IEnumerator WaitaBit()
+        {
+            yield return new WaitForSeconds(1f);
             ContinueStory();
         }
     }
