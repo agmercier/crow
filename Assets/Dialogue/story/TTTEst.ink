@@ -2,7 +2,7 @@
 -> main
 
 === main ===
-Thank you, little crow. You got me my voice back! (Press space to choose)
+Thank you, little crow. You got me my voice back!
     + [You're welcome!]
         -> chosen("cool")
     + [Get out of my way.]
