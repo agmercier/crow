@@ -21,8 +21,11 @@ namespace Platformer.Mechanics
         {
             if (checkPoint != null)
             {
-                //play the collection sound
-                AudioSource.PlayClipAtPoint(collectAudio, this.transform.position, 20f);
+                //play the collection sound only when this is not already the checkpoint
+                if(this.transform.position  != spawnPoint.transform.position)
+                {
+                    AudioSource.PlayClipAtPoint(collectAudio, this.transform.position, 20f);
+                }
 
                 spawnPoint.transform.position = this.transform.position;
             }
