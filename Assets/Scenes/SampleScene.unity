@@ -69072,12 +69072,12 @@ PrefabInstance:
     - target: {fileID: 5993059845083962610, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.088995
       objectReference: {fileID: 0}
     - target: {fileID: 5993059845083962610, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.088995
       objectReference: {fileID: 0}
     - target: {fileID: 5993059845083962610, guid: c90922a1d2782bc43ace05ff9011ed04,
         type: 3}
@@ -72585,6 +72585,7 @@ MonoBehaviour:
   collectAudio: {fileID: 8300000, guid: 9de717c7252d2e54890c77125a918c58, type: 3}
   target: {fileID: 465513424}
   speed: 1
+  inZone: 0
 --- !u!1 &1529140884
 GameObject:
   m_ObjectHideFlags: 0
