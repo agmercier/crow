@@ -13,7 +13,7 @@ namespace Platformer.Mechanics
         public Transform target;
         public float speed;
 
-        private bool inZone;
+        public bool inZone;
 
 
 
@@ -24,13 +24,13 @@ namespace Platformer.Mechanics
             if (Input.GetButtonDown("Water") && player.GetComponent<PlayerController>().waterUnlocked && inZone)
             {
 
-
+                Debug.Log("Pressed X");
                 StartCoroutine(ExampleCoroutine());
 
             }
         }
 
-        void OnTriggerEnter2D(Collider2D other)
+        void OnTriggerEnter2D(Collider2D other) 
         {
             if (other.CompareTag("Player"))
             {
@@ -47,7 +47,7 @@ namespace Platformer.Mechanics
         }
         IEnumerator ExampleCoroutine()
             {
-                Debug.Log("Pressed X");
+                
                 AudioSource.PlayClipAtPoint(collectAudio, this.transform.position);
 
                 player.GetComponent<PlayerController>().controlEnabled = false;
