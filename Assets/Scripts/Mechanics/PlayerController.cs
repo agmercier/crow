@@ -28,6 +28,7 @@ namespace Platformer.Mechanics
 
         private float permaGravity;
         public float floatingGravityModifier = 0.1f;
+        public bool gliding = false;
 
         /// <summary>
         /// Max horizontal speed of the player.
@@ -91,11 +92,13 @@ namespace Platformer.Mechanics
                 {
                     this.GetComponent<PlayerController>().velocity.y = floatingReset;
                     this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
+                    gliding = true;
 
                 }
                 else if (Input.GetButtonUp("Jump") && glideUnlocked)
                 {
                     this.GetComponent<PlayerController>().gravityModifier = permaGravity;
+                    gliding = false;
                 }
 
             }
@@ -160,6 +163,7 @@ namespace Platformer.Mechanics
 
             animator.SetBool("grounded", IsGrounded);
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+            animator.SetBool("InFlight",gliding);
 
             targetVelocity = move * maxSpeed;
         }
