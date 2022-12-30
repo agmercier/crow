@@ -1,3 +1,4 @@
 ﻿Story start
-Everyone lost their voice and they all went mad... I just hid in this cave.
-But you got my voice back! As a thanks, I placed that mushroom over there. Safe travels, little crow!
+Ah, a little crow! You got my voice back... Thank you.
+I've been hearing the sounds of a crow deeper in the cave.
+I placed that mushroom over there, as a thanks. Now you can continue on. Safe travels, little crow!
