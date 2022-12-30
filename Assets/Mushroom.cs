@@ -6,7 +6,7 @@ namespace Platformer.Mechanics
 {
     public class Mushroom : MonoBehaviour
     {
-        private float bounce = 5f;
+       
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
