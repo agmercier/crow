@@ -18,8 +18,13 @@ namespace Platformer.Mechanics
             if (rb == null) return;
             var player = rb.GetComponent<PlayerController>();
             if (player == null) return;
-            AudioSource.PlayClipAtPoint(bounce, this.transform.position, 20f);
+            // AudioSource.PlayClipAtPoint(bounce, this.transform.position, 20f);
             AddVelocity(player);
+        }
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            AudioSource.PlayClipAtPoint(bounce,this.transform.position,20f);
         }
 
         void AddVelocity(PlayerController player)
