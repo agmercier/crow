@@ -10,7 +10,7 @@ namespace Platformer.Mechanics
 public class Jump_UI_appear : MonoBehaviour
 {
     [Header("Image")]
-    [SerializeField] private Image jumpImage;
+    [SerializeField] private SpriteRenderer jumpImage;
     public GameObject player;
 
     void OnTriggerEnter2D(Collider2D other)
