@@ -14,12 +14,23 @@ namespace Platformer.Mechanics
 
         void OnTriggerStay2D(Collider2D other)
         {
-            var rb = other.attachedRigidbody;
-            if (rb == null) return;
-            var player = rb.GetComponent<PlayerController>();
-            if (player == null) return;
-            AudioSource.PlayClipAtPoint(bounce, this.transform.position, 20f);
-            AddVelocity(player);
+            if(other.CompareTag("Player"))
+            {
+                var rb = other.attachedRigidbody;
+                if (rb == null) return;
+                var player = rb.GetComponent<PlayerController>();
+                if (player == null) return;
+                // AudioSource.PlayClipAtPoint(bounce, this.transform.position, 20f);
+                AddVelocity(player);
+            }
+        }
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if(other.CompareTag("Player"))
+            {
+            AudioSource.PlayClipAtPoint(bounce,this.transform.position,20f);
+            }
         }
 
         void AddVelocity(PlayerController player)

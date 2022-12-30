@@ -28,7 +28,7 @@ namespace Platformer.Mechanics
         {
             playerInRange = false;
             visualCue.SetActive(false);
-            hasSound = false;
+            // hasSound = false;
         }
 
         private void Update()
