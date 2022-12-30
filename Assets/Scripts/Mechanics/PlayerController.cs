@@ -79,12 +79,20 @@ namespace Platformer.Mechanics
                 {
                     jumpState = JumpState.PrepareToJump;
                     //this.GetComponent<PlayerController>().gravityModifier = floatingGravityModifier;
+                    if(glideUnlocked)
+                    {
+                        gliding = true;
+                    }
                 }
                 else if (Input.GetButtonUp("Jump") && jumpUnlocked)
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
                     //this.GetComponent<PlayerController>().gravityModifier = permaGravity;
+                    if(glideUnlocked)
+                    {
+                        gliding = false;
+                    }
                 }
 
 

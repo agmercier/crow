@@ -12,12 +12,12 @@ public class FacePlayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        visual.GetComponent<SpriteRenderer>().flipX = false;
+        visual.GetComponent<SpriteRenderer>().flipX = !visual.GetComponent<SpriteRenderer>().flipX;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        visual.GetComponent<SpriteRenderer>().flipX = true;
+        visual.GetComponent<SpriteRenderer>().flipX = !visual.GetComponent<SpriteRenderer>().flipX;
     }
 }
 
