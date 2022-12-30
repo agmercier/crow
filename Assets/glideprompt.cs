@@ -10,7 +10,7 @@ namespace Platformer.Mechanics
 public class glideprompt : MonoBehaviour
 {
     [Header("Image")]
-    [SerializeField] private Image UI_anim;
+    [SerializeField] private SpriteRenderer UI_anim;
     public GameObject orb; 
 
     void OnTriggerEnter2D(Collider2D other)
