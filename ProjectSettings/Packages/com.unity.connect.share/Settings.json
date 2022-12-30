@@ -6,7 +6,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/rival/OneDrive/Documents/t;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"D:/eline/Documents/Unity projects/Crow game/WebGLBuild 1.8 Final;D:/eline/Documents/Unity projects/Crow game/WebGlBuild 1.7 Final;D:/eline/Documents/Unity projects/Crow game/WebGlBuild 1.6 Final;D:/eline/Documents/Unity projects/Crow game/WebGLBuild 1.5 Final;C:/Users/rival/OneDrive/Documents/t;;;;;\"}"
             }
         ]
     }
