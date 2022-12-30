@@ -53,11 +53,12 @@ public class KiwiUnlock : MonoBehaviour
             //makes speakable
             kiwiTrigger.GetComponent<DialogueTrigger>().hasSound = true;
 
+            mushroom.SetActive(true);
+
             if(later_kiwi != null)
             {
                 later_kiwi.SetActive(true);
                 later_kiwiTrigger.GetComponent<DialogueTrigger>().hasSound = true;
-                mushroom.SetActive(true);
             }
 
             }
