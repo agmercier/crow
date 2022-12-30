@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Special Thanks:
+  m_text: 'Special thanks:
 
 
     Lily
@@ -2303,8 +2303,8 @@ MonoBehaviour:
 
 
 
-    For more credits see the Main
-    menu Credits section.'
+    For more credits see the main
+    menu credits section.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88003508be39e449cb51c48494e680cf, type: 2}
   m_sharedMaterial: {fileID: 21699584260080902, guid: 88003508be39e449cb51c48494e680cf,
